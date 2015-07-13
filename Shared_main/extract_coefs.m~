@@ -57,8 +57,8 @@ for j = 1:opt.cells_per_image
       end
 
     end
-     dL = - sum(sum(WY .* xk,3),4); % Add contribution from each map and each moment
-%     dL = sum(dL_mom,3);
+%     dL = - sum(sum(WY .* xk,3),4); % Add contribution from each map and each moment
+    dL = sum(dL_mom,3);
 %     dL = dL_mom(:,:,3); % Make it skewness pursuit
 
 

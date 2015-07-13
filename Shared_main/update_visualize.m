@@ -1,17 +1,21 @@
-function update_visualize( y,H, W, opt,subs,cur_pc,varargin)
+function update_visualize( y,H, W, opt,subs,varargin)
 %UPDATE_VISUALIZE Summary of this function goes here
 %   Detailed explanation goes here
 
-
+if nargin >5
+	cur_pc = varargin{1};
+else
+	cur_pc = 1; %Show figures on current machine
+end
 
 if nargin >6
-  show_numbers = varargin{1};
+  show_numbers = varargin{2}; %Show order of identified neurons by how likely they are
 else
   show_numbers = 0;
 end
 
 if nargin >7
-  show_specific = varargin{2};
+  show_specific = varargin{3}; %Show specific neuron numbers
 else
   show_specific = [];
 end
