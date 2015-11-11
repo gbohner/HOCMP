@@ -8,15 +8,15 @@ All analysis parameters - including input file path - are within the set_opt.m s
 
 %Directory structure
 
-opt.code_path = <package location>
+opt.code_path = package location
 
-opt.tiff_path = <Input data file path> (tiff stack, or initial tiff frame)
+opt.tiff_path = Input data file path (tiff stack, or initial tiff frame)
 
-opt.data_path = <intermediate folder>; %Output preprocessed data
+opt.data_path = intermediate folder for preprocessed data
 
-opt.output_folder = %Output folder
+opt.output_folder = Output folder
 
-opt.output_file_prefix = %Output file name prefixs
+opt.output_file_prefix = Output file name prefixs
 
 % Model setup
 
